@@ -12,6 +12,20 @@ import matplotlib.pyplot as plt  # библиотека для графика
 #                 A[j] = A[j+1]
 #                 A[j+1] = a
 
+def BubbleSort(Z):                    # сортировка коктельная (SHAKER)
+    for i in range(0, len(Z)//2):
+        for j in range(i, len(Z)-1-i):
+            if Z[j] > Z[j+1]:
+                z = Z[j]
+                Z[j] = Z[j+1]
+                Z[j+1] = z
+        for j in range(len(Z)-2-1, i+1):
+            if Z[j] < Z[j-1]:
+                z = Z[j]
+                Z[j] = Z[j - 1]
+                Z[j - 1] = z
+
+
 # def BubbleSort(nums):                  # сортировка вставками (InsertSort)
 #     for i in range(1, len(nums)):
 #         t = nums[1]
@@ -21,13 +35,13 @@ import matplotlib.pyplot as plt  # библиотека для графика
 #             j-=1
 #             nums[j] = t
 
-def BubbleSort(N):                   # сортировка вставками (выбором (select))
-    for i in range(0, len(N) - 1):
-        smallest = i
-        for j in range(i + 1, len(N)):
-            if N[j] < N[smallest]:
-                smallest = j
-        N[i], N[smallest] = N[smallest], N[i]
+# def BubbleSort(N):                   # сортировка вставками (выбором (select))
+#    for i in range(0, len(N) - 1):
+#        smallest = i
+#        for j in range(i + 1, len(N)):
+#            if N[j] < N[smallest]:
+#                smallest = j
+#        N[i], N[smallest] = N[smallest], N[i]
 
 
 def QuickSort(A, fst, lst):  # быстрая сортировка
