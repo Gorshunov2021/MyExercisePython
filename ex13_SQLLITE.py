@@ -66,7 +66,7 @@ for row in db.execute("select * from faculties;"):
     print(f"{row}")
 
 # Данные в виде списка кортежей для последующей вставки
-List = [("Ivan", "Ivanov", "+375292000022", "Lenina 76/1", 1),
+List = [("Ivan2222", "Ivanov", "+375292000022", "Lenina 76/1", 1),
         ("Petr", "Petrov", None, "Lenina 76/2", 2),
         ("Stepan", None, "+375292000002", "Lenina 76/3", 1)]
 
