@@ -9,14 +9,14 @@
 # file.write(" 33")
 # file.close()
 
-# try:
-#     file = open("test.txt", "r")
-#     print(file.read())
-#     file.close()
-# except FileNotFoundError:
-#     print("Not Found")
-# except IOError:
-#     print("Something else")
+try:
+    file = open("test.txt", "r")
+    print(file.read())
+    file.close()
+except FileNotFoundError:
+    print("Not Found")
+except IOError:
+    print("Something else")
 
 # with open('test.txt', 'r') as file:
 #     print(file.read())
@@ -60,8 +60,8 @@
 # os.rename("D:\\test333.txt", "D:\\test.txt")
 
 
-import shutil
-shutil.move("D:\\test3336.txt", "D:\\test.txt")
+# import shutil
+# shutil.move("D:\\test3336.txt", "D:\\test.txt")
 
 
 
