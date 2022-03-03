@@ -59,6 +59,6 @@ b3.show()
 Book.total()
 
 b1.set_id(100)
-b2.set_id(200)
+b2.set_id(250)
 b3.set_id(300)
 print(b2.get_id())
