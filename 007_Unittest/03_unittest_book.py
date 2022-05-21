@@ -1,5 +1,5 @@
 import unittest
-import 01_Home_Works_5_Magic
+import 006_Magic_Python
 
 
 class BookTest(unittest.TestCase):
